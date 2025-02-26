@@ -46,7 +46,7 @@ def t2v_generation(txt2vid_prompt, resolution, sd_steps, guide_scale,
         guide_scale=guide_scale,
         n_prompt=n_prompt,
         seed=seed,
-        offload_model=True)
+        offload_model=False)
 
     cache_video(
         tensor=video[None],
